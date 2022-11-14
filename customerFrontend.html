@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head> <title> Exercise 3 </title> 
+        <link href="style.css" 
+        rel="stylesheet" 
+        type="text/css"/> 
+    </head>
+    <body>
+        <center>
+        <form onsubmit="return validateQuantities()" action="customerBackend.php" id="items" method="post" onkeydown="return event.key != 'Enter';">
+        <div class="login-div" id = "loginDiv">
+            <h2>Please enter username and password</h2>
+                <strong>Username:</strong><br> <input type="text" name="username" id="username" value="" autocomplete="off"><br>
+                <strong>Password:</strong><br> <input type="password" name ="pwd" id="pwd" value=""><br><br>
+                <!-- <input type="submit">  -->
+            <input type="button" onclick="validateForm()" value="Login">
+        </div>
+
+        <div class = "store-div" id="Store" style="display: none;">
+        <div class="display">
+        <p>
+            <div class="img-football">
+                <img src="football.jfif" alt="Football" width = "300" height = "250">
+                <center>
+                <p><strong>Football - $20.99 </strong><br><br>
+                   How many would you like? <br>
+                   <input type="number" name="Footballnum" id="Footballnum" value="0" autocomplete="off">
+                </p>
+                </center>
+            </div>
+            <div class="img-saltines">
+                <img src="saltines.jfif" alt="Saltines" width = "300" height = "250">
+                <center>
+                <p><strong>Saltines - $3.00</strong><br><br>
+                   How many would you like?<br>
+                   <input type="number" name="Saltinesnum" id="Saltinesnum" value="0" autocomplete="off">
+                </p>
+                </center>
+            </div>
+            <div class="img-grapes">
+                <img src="grapes.jfif" alt="Grapes" width = "300" height = "250">
+                <center>   
+                <p><strong>Grapes - $1.50</strong><br><br>
+                   How many would you like?<br>
+                   <input type="number" name="Grapesnum" id="Grapesnum" value="0" autocomplete="off">
+                </p>
+                </center>
+            </div>
+
+            <center>
+                <h3>Please select a shipping option</h3>
+                <table>
+                <tr>
+                    <td><input type="radio" id="free" name="shipping" value="Free 7 day"></td>
+                    <td><label for="free">Free 7 day</label><br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="overnight" name="shipping" value="$50.00 over night"></td>
+                    <td><label for="overnight">$50.00 over night</label><br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="threeday" name="shipping" value="$5.00 three day"></td>
+                    <td><label for="threeday">$5.00 three day</label><br></td>
+                </tr>
+                </table>
+
+                <br>
+                <button type="button" onclick="resetFields()">Reset</button>
+                <input type="submit" value="Submit Purchase"> 
+            </center>
+
+            </form>  
+        </p>
+        </div>
+
+        <p class = "item-format">
+            
+            </form>
+        </p>
+
+        </div>
+        </center>
+        <script src="formChecker.js"></script>
+    </body>
+</html>
+
+
+<!-- onsubmit="validateForm()" method="post" -->

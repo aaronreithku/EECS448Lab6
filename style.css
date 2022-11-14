@@ -1,0 +1,45 @@
+.login-div{
+    background-color: rgb(180, 180, 180);
+}
+
+body{
+    background-color: Dodgerblue;
+}
+
+.display{
+    display: inline-block;
+}
+.img-football{
+    text-align: center;
+    display: inline-block;
+}
+
+.img-saltines{
+    text-align: justify;
+    display: inline-block;
+}
+
+.img-grapes{
+    text-align: justify;
+    display: inline-block;
+}
+
+table{
+    margin-top: 0px;
+}
+
+h3{
+    margin-bottom: 0px;
+}
+
+.Blue{
+    background-color: DodgerBlue;
+}
+
+.red{
+    background-color: white;
+}
+
+.receipt{
+    border-color: white;
+}
